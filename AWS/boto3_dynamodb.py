@@ -4,14 +4,16 @@ Created on Fri Jul 14 12:37:30 2023
 
 @author: kotha
 """
+from datetime import datetime as dt
+init_time = dt.now()
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
 import os
 from time import sleep
 
 # Credentials for Authorization
-access_id='XXXXXX'
-secret_access_key='XXXXXX'
+access_id='AKIA2WV3P6RXZXT2KVWI'
+secret_access_key='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'
 
 folder_path = os.path.dirname(os.path.realpath(__file__)) + "\\"
 resource_to_use = 'dynamodb'
@@ -177,6 +179,5 @@ print("Result --->", items)
 response = table.delete()
 print('{} Table Deleted successfully!!'.format(table_name))
 
-# Update multiple parameters of a record at once
-# Update multiple record at once
-# table = dynamodb.Table(table_name) ######################################## delete this line - already mentioned above
+fin_time = dt.now()
+print("Code Execution completed in --->", fin_time-init_time)
