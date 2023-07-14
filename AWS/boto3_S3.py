@@ -10,8 +10,8 @@ import os
 from time import sleep
 
 # Credentials for Authorization
-access_id='AKIA2WV3P6RXZXT2KVWI'
-secret_access_key='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'
+access_id='XXXXXX'
+secret_access_key='XXXXXX'
 
 folder_path = os.path.dirname(os.path.realpath(__file__)) + "\\"
 file_name = 'test.png'
